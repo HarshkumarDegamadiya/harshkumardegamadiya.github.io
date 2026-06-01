@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Harshkumar Degamadiya | AI &amp; ML Developer &amp; Senior Data Analyst Portfolio</title>
+  <meta name="description" content="Interactive Portfolio of Harshkumar Degamadiya. Senior Data Analyst &amp; AI/ML Developer specializing in Python, Django, NLP, computer vision, data pipeline automation, and business intelligence.">
+  <meta name="keywords" content="Harshkumar Degamadiya, Portfolio, Data Analyst, AI Developer, ML Developer, Python, Django, SQL, PowerBI, Machine Learning, Ahmedabad">
+  <meta name="author" content="Harshkumar Degamadiya">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harshkumar Degamadiya | Interactive AI/ML Portfolio">
+  <meta property="og:description" content="Explore structured project case studies, data automation, and machine learning systems.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* CSS Variables for Premium Theme Design */
+    :root[data-theme="dark"] {
+      --bg-gradient: linear-gradient(135deg, #070b19 0%, #0d1527 50%, #090e1a 100%);
+      --body-bg: #070b19;
+      --card-bg: rgba(15, 23, 42, 0.6);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+      --accent-color: #38bdf8;
+      --accent-color-rgb: 56, 189, 248;
+      --accent-secondary: #a855f7;
+      --badge-bg: rgba(56, 189, 248, 0.12);
+      --badge-border: rgba(56, 189, 248, 0.25);
+      --nav-bg: rgba(15, 23, 42, 0.7);
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+      --canvas-line: rgba(56, 189, 248, 0.06);
+      --canvas-particle: rgba(56, 189, 248, 0.25);
+      --timeline-line: rgba(255, 255, 255, 0.1);
+      --timeline-dot: #6366f1;
+      --input-bg: rgba(255, 255, 255, 0.04);
+      
+      --problem-bg: rgba(239, 68, 68, 0.08);
+      --problem-border: rgba(239, 68, 68, 0.25);
+      --problem-text: #fca5a5;
+      
+      --task-bg: rgba(59, 130, 246, 0.08);
+      --task-border: rgba(59, 130, 246, 0.25);
+      --task-text: #93c5fd;
+
+      --process-bg: rgba(168, 85, 247, 0.08);
+      --process-border: rgba(168, 85, 247, 0.25);
+      --process-text: #d8b4fe;
+
+      --outcome-bg: rgba(16, 185, 129, 0.08);
+      --outcome-border: rgba(16, 185, 129, 0.25);
+      --outcome-text: #6ee7b7;
+    }
+
+    :root[data-theme="light"] {
+      --bg-gradient: linear-gradient(135deg, #f4f6f9 0%, #eef2f6 50%, #f4f6f9 100%);
+      --body-bg: #f4f6f9;
+      --card-bg: rgba(255, 255, 255, 0.75);
+      --card-border: rgba(0, 0, 0, 0.07);
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+      --accent-color: #4f46e5;
+      --accent-color-rgb: 79, 70, 229;
+      --accent-secondary: #7c3aed;
+      --badge-bg: rgba(79, 70, 229, 0.08);
+      --badge-border: rgba(79, 70, 229, 0.2);
+      --nav-bg: rgba(244, 246, 249, 0.8);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+      --canvas-line: rgba(79, 70, 229, 0.04);
+      --canvas-particle: rgba(79, 70, 229, 0.15);
+      --timeline-line: rgba(0, 0, 0, 0.08);
+      --timeline-dot: #4f46e5;
+      --input-bg: rgba(0, 0, 0, 0.02);
+
+      --problem-bg: rgba(220, 38, 38, 0.05);
+      --problem-border: rgba(220, 38, 38, 0.15);
+      --problem-text: #b91c1c;
+
+      --task-bg: rgba(29, 78, 216, 0.05);
+      --task-border: rgba(29, 78, 216, 0.15);
+      --task-text: #1d4ed8;
+
+      --process-bg: rgba(109, 40, 217, 0.05);
+      --process-border: rgba(109, 40, 217, 0.15);
+      --process-text: #6d28d9;
+
+      --outcome-bg: rgba(4, 120, 87, 0.05);
+      --outcome-border: rgba(4, 120, 87, 0.15);
+      --outcome-text: #047857;
+    }
+
+    /* Global Typography & Transitions */
+    * {
+      box-sizing: border-box;
+      transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: var(--accent-secondary);
+    }
+
+    /* Background Canvas */
+    #network-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .main-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 95px 15px 40px 15px;
+    }
+
+    /* Glassmorphic Navigation Bar */
+    .glass-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--nav-bg);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--card-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
+    }
+
+    .nav-brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-wrapper {
+      position: relative;
+      width: 200px;
+    }
+    
+    .search-wrapper i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 6px 12px 6px 30px;
+      font-size: 0.85rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+    }
+
+    :root[data-theme="light"] .search-input {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.15);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--card-border);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    :root[data-theme="light"] .icon-btn {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    .icon-btn:hover {
+      background: var(--accent-gradient);
+      color: white;
+      border-color: transparent;
+      transform: translateY(-2px);
+    }
+
+    /* Premium Button Styles */
+    .btn-gradient {
+      background: var(--accent-gradient);
+      color: white !important;
+      border: none;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(var(--accent-color-rgb), 0.25);
+    }
+
+    .btn-gradient:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(var(--accent-color-rgb), 0.4);
+    }
+
+    .btn-outline-glass {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      color: var(--text-primary);
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    :root[data-theme="light"] .btn-outline-glass {
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    .btn-outline-glass:hover {
+      background: rgba(var(--accent-color-rgb), 0.08);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    /* Premium Glass Cards */
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .glass-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Hero Header Specifics */
+    .hero-card {
+      padding: 50px;
+      border-radius: 24px;
+    }
+
+    .hero-name {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.03em;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 35px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    :root[data-theme="light"] .contact-item {
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    .contact-item:hover {
+      background: rgba(var(--accent-color-rgb), 0.08);
+      border-color: rgba(var(--accent-color-rgb), 0.3);
+      transform: translateX(4px);
+    }
+
+    .contact-item i {
+      color: var(--accent-color);
+      width: 16px;
+    }
+
+    /* Key Metrics Highlights */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .metric-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    :root[data-theme="light"] .metric-card {
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    .metric-card:hover {
+      background: rgba(var(--accent-color-rgb), 0.05);
+      border-color: rgba(var(--accent-color-rgb), 0.2);
+    }
+
+    .metric-num {
+      font-size: 2rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+
+    .metric-lbl {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Section Subheadings */
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-primary);
+    }
+
+    .section-title i {
+      color: var(--accent-color);
+      font-size: 1.4rem;
+    }
+
+    .section-title::after {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      background: var(--card-border);
+      margin-left: 12px;
+    }
+
+    /* Skills Badges */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--accent-color);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+    }
+
+    .skill-badge:hover {
+      background: var(--accent-gradient);
+      color: white !important;
+      border-color: transparent;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(var(--accent-color-rgb), 0.3);
+    }
+
+    .skill-badge.highlighted {
+      background: var(--accent-gradient);
+      color: white !important;
+      border-color: transparent;
+      box-shadow: 0 4px 12px rgba(var(--accent-color-rgb), 0.3);
+    }
+
+    .skill-mention {
+      border-bottom: 2px dashed rgba(var(--accent-color-rgb), 0.3);
+      cursor: help;
+      transition: all 0.2s ease;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .skill-mention.highlight-active {
+      color: white !important;
+      background: var(--accent-gradient);
+      border-bottom-color: transparent;
+      border-radius: 4px;
+      padding: 1px 5px;
+      box-shadow: 0 2px 8px rgba(var(--accent-color-rgb), 0.3);
+    }
+
+    /* Interactive Showcase Section (Problem, Task, Process, Outcome) */
+    .project-showcase {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 25px;
+    }
+
+    .project-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .project-menu-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--card-border);
+      padding: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    :root[data-theme="light"] .project-menu-item {
+      background: rgba(0, 0, 0, 0.01);
+    }
+
+    .project-menu-item:hover {
+      background: rgba(var(--accent-color-rgb), 0.05);
+      border-color: rgba(var(--accent-color-rgb), 0.2);
+    }
+
+    .project-menu-item.active {
+      background: var(--accent-gradient) !important;
+      border-color: transparent !important;
+      color: white !important;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .project-menu-item.active h4 {
+      color: white !important;
+    }
+
+    .project-menu-item.active span {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .project-menu-item h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+
+    .project-menu-item span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .project-display {
+      position: relative;
+    }
+
+    .ptpo-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .ptpo-card {
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ptpo-card h5 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+    }
+
+    .ptpo-card p, .ptpo-card ul {
+      font-size: 0.88rem;
+      margin-bottom: 0;
+      color: var(--text-secondary);
+      padding-left: 0;
+    }
+
+    .ptpo-card ul {
+      list-style-type: none;
+    }
+
+    .ptpo-card ul li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 6px;
+    }
+
+    .ptpo-card ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: inherit;
+    }
+
+    .ptpo-problem {
+      background: var(--problem-bg);
+      border-color: var(--problem-border);
+    }
+    .ptpo-problem h5 { color: var(--problem-text); }
+    .ptpo-problem ul li::before { color: var(--problem-text); }
+
+    .ptpo-task {
+      background: var(--task-bg);
+      border-color: var(--task-border);
+    }
+    .ptpo-task h5 { color: var(--task-text); }
+    .ptpo-task ul li::before { color: var(--task-text); }
+
+    .ptpo-process {
+      background: var(--process-bg);
+      border-color: var(--process-border);
+    }
+    .ptpo-process h5 { color: var(--process-text); }
+    .ptpo-process ul li::before { color: var(--process-text); }
+
+    .ptpo-outcome {
+      background: var(--outcome-bg);
+      border-color: var(--outcome-border);
+    }
+    .ptpo-outcome h5 { color: var(--outcome-text); }
+    .ptpo-outcome ul li::before { color: var(--outcome-text); }
+
+    /* Timeline styling */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background: var(--timeline-line);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 35px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -32px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--timeline-dot);
+      border: 3px solid var(--body-bg);
+      box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.25);
+      z-index: 2;
+    }
+
+    .timeline-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .job-company {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--accent-color);
+    }
+
+    .job-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .job-details {
+      margin-top: 12px;
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .job-details li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    .job-details li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    /* Contact Us styling */
+    .contact-form-container {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 30px;
+    }
+
+    .form-group-glass {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-control-glass {
+      background: var(--input-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      padding: 12px 16px;
+      font-size: 0.92rem;
+      width: 100%;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .form-control-glass:focus {
+      border-color: var(--accent-color);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 0 3px rgba(var(--accent-color-rgb), 0.15);
+    }
+
+    textarea.form-control-glass {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-label-glass {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* Feedback message toast */
+    .form-feedback {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #6ee7b7;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      animation: fadeIn 0.4s ease;
+    }
+
+    :root[data-theme="light"] .form-feedback {
+      background: rgba(4, 120, 87, 0.08);
+      border: 1px solid rgba(4, 120, 87, 0.2);
+      color: #047857;
+    }
+
+    .spinner-border-sm {
+      display: none;
+      width: 1rem;
+      height: 1rem;
+      border-width: 0.2em;
+    }
+
+    /* General Animations & Filters */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .project-display.fade-transition {
+      animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .timeline-item.dimmed, .glass-card.dimmed {
+      opacity: 0.15;
+      filter: blur(1px);
+      pointer-events: none;
+    }
+
+    .timeline-item.matched, .glass-card.matched {
+      opacity: 1;
+      filter: none;
+    }
+
+    .highlight-mark {
+      background: rgba(253, 224, 71, 0.4);
+      color: inherit;
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+
+    :root[data-theme="light"] .highlight-mark {
+      background: rgba(253, 224, 71, 0.65);
+    }
+
+    /* A4 PDF Print Stylesheet Optimization */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 1.4cm 1cm 1.4cm 1cm;
+      }
+
+      body {
+        background: #ffffff !important;
+        color: #111111 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.35 !important;
+      }
+
+      #network-canvas, .glass-nav, .icon-btn, .search-wrapper, .hero-actions, #contact, hr {
+        display: none !important;
+      }
+
+      .main-container {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .glass-card {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 12pt !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        page-break-inside: avoid;
+      }
+
+      .glass-card::before {
+        display: none !important;
+      }
+
+      .hero-card {
+        padding: 0 !important;
+        margin-bottom: 15pt !important;
+        border-bottom: 2px solid #ddd !important;
+        border-radius: 0 !important;
+      }
+
+      .hero-name {
+        font-size: 20pt !important;
+        color: #111111 !important;
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        margin-bottom: 2pt !important;
+      }
+
+      .hero-title {
+        font-size: 11pt !important;
+        color: #444444 !important;
+        margin-bottom: 8pt !important;
+      }
+
+      .contact-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 6pt !important;
+        margin-bottom: 10pt !important;
+      }
+
+      .contact-item {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        font-size: 7.5pt !important;
+        color: #333 !important;
+      }
+
+      .contact-item i {
+        color: #333 !important;
+      }
+
+      .metrics-row {
+        display: none !important;
+      }
+
+      /* Reformat project showcase for direct printing of all cases in text list */
+      .project-showcase {
+        display: block !important;
+      }
+
+      .project-menu {
+        display: none !important;
+      }
+
+      .project-display {
+        display: block !important;
+      }
+
+      .ptpo-print-wrapper {
+        margin-bottom: 15pt !important;
+        page-break-inside: avoid;
+      }
+
+      .ptpo-container {
+        display: block !important;
+      }
+
+      .ptpo-card {
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin-bottom: 8pt !important;
+      }
+
+      .ptpo-card h5 {
+        font-size: 9pt !important;
+        color: #111 !important;
+        margin-bottom: 4pt !important;
+      }
+
+      .ptpo-card p, .ptpo-card ul li {
+        font-size: 8pt !important;
+        color: #333 !important;
+      }
+
+      .section-title {
+        font-size: 11pt !important;
+        margin-bottom: 6pt !important;
+        color: #111 !important;
+        border-bottom: 1px solid #ccc !important;
+        padding-bottom: 2pt !important;
+        page-break-after: avoid;
+      }
+
+      .section-title i, .section-title::after {
+        display: none !important;
+      }
+
+      .skill-badge {
+        background: transparent !important;
+        border: 1px solid #666 !important;
+        color: #111 !important;
+        padding: 2pt 5pt !important;
+        font-size: 7.5pt !important;
+        border-radius: 4px !important;
+      }
+
+      .timeline::before {
+        display: none !important;
+      }
+
+      .timeline {
+        padding-left: 0 !important;
+      }
+
+      .timeline-dot {
+        display: none !important;
+      }
+
+      .timeline-item {
+        margin-bottom: 10pt !important;
+        page-break-inside: avoid;
+      }
+
+      .timeline-meta {
+        margin-bottom: 2pt !important;
+      }
+
+      .job-title {
+        font-size: 9.5pt !important;
+        color: #111 !important;
+      }
+
+      .job-company {
+        font-size: 9pt !important;
+        color: #333 !important;
+      }
+
+      .job-date {
+        font-size: 8pt !important;
+        color: #555 !important;
+      }
+
+      .job-details {
+        margin-top: 4pt !important;
+      }
+
+      .job-details li {
+        padding-left: 10pt !important;
+        font-size: 8pt !important;
+        color: #333 !important;
+        margin-bottom: 3pt !important;
+      }
+
+      .job-details li::before {
+        content: "•" !important;
+        left: 2pt !important;
+        color: #111 !important;
+      }
+
+      .skill-mention {
+        border-bottom: none !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    /* Small Screen Adjustments */
+    @media (max-width: 992px) {
+      .project-showcase {
+        grid-template-columns: 1fr;
+      }
+      .project-menu {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+      }
+      .project-menu-item {
+        flex-shrink: 0;
+        width: 220px;
+      }
+      .contact-form-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-card {
+        padding: 30px;
+      }
+      .hero-name {
+        font-size: 2.5rem;
+      }
+      .metrics-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .ptpo-container {
+        grid-template-columns: 1fr;
+      }
+      .search-wrapper {
+        width: 130px;
+      }
+      .search-wrapper:focus-within {
+        width: 170px;
+      }
+      .nav-links {
+        display: none; /* Keep clean navbar on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Data-Science Network Canvas -->
+  <canvas id="network-canvas"></canvas>
+
+  <!-- Sticky Glass Nav Bar -->
+  <nav class="glass-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">HD.</a>
+      
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#profile">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="resume-search" class="search-input" placeholder="Search keywords..." aria-label="Search resume contents">
+        </div>
+        <button id="theme-toggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle light or dark theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="print-btn" class="icon-btn" title="Print Layout" aria-label="Open print settings">
+          <i class="fa-solid fa-print"></i>
+        </button>
+        <a href="Harshkumar_Degamadiya.pdf" class="icon-btn" download="Harshkumar_Degamadiya.pdf" title="Download Resume PDF">
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <div class="row">
+      <div class="col-12">
+        
+        <!-- Hero Profile Card -->
+        <section class="glass-card hero-card" id="profile">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h1 class="hero-name">Harshkumar Degamadiya</h1>
+              <p class="hero-title">AI &amp; ML Developer &amp; Senior Data Analyst</p>
+              
+              <!-- Direct Actions -->
+              <div class="hero-actions">
+                <a href="#projects" class="btn-gradient"><i class="fa-solid fa-code me-2"></i>View Case Studies</a>
+                <a href="Harshkumar_Degamadiya.pdf" class="btn-outline-glass" download="Harshkumar_Degamadiya.pdf">
+                  <i class="fa-solid fa-file-pdf me-2"></i>Download Resume PDF
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <!-- Contact Information Summary -->
+              <div class="contact-grid-wrapper">
+                <div class="contact-grid-vertical d-flex flex-column gap-2">
+                  <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ahmedabad, India</span>
+                  </div>
+                  <a href="tel:+918238136766" class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91-823-813-6766</span>
+                  </a>
+                  <a href="mailto:harshkumardegamadiya@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>harshkumardegamadiya@gmail.com</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/harshkumardegamadiya/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>harshkumardegamadiya</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics Ribbon -->
+          <div class="metrics-row">
+            <div class="metric-card">
+              <div class="metric-num">50%</div>
+              <div class="metric-lbl">Material Loss reduction</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">-30%</div>
+              <div class="metric-lbl">Data Processing Time</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">+20%</div>
+              <div class="metric-lbl">Operational Efficiency</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-num">100%</div>
+              <div class="metric-lbl">Open Source BI Migration</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Executive Summary -->
+        <section class="glass-card" id="summary">
+          <h2 class="section-title"><i class="fa-solid fa-user-tie"></i>Summary</h2>
+          <p class="mb-0 text-secondary" style="font-size: 1.05rem;">
+            Experienced Senior Data Analyst with a strong background in <span class="skill-mention" data-skill-ref="python">Python</span> and <span class="skill-mention" data-skill-ref="sql">SQL</span>, specializing in automating data processes and enhancing analytical capabilities. Successfully implemented a company-wide time tracking system and replaced costly BI tools with open-source alternatives, significantly improving efficiency and reducing costs. Proven track record in developing data-driven solutions that streamline operations and support strategic decision-making. Eager to leverage analytical expertise to drive insights and improvements in a dynamic organization.
+          </p>
+        </section>
+
+        <!-- Technical Skills Card -->
+        <section class="glass-card" id="skills">
+          <h2 class="section-title"><i class="fa-solid fa-bolt"></i>Skills</h2>
+          
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="h5 mb-3 text-primary"><i class="fa-solid fa-code me-2 text-muted"></i>Languages</h3>
+              <div class="skills-container mb-4">
+                <span class="skill-badge" data-skill="python">Python</span>
+                <span class="skill-badge" data-skill="sql">SQL</span>
+              </div>
+
+              <h3 class="h5 mb-3 text-primary"><i class="fa-solid fa-screwdriver-wrench me-2 text-muted"></i>Tools &amp; Frameworks</h3>
+              <div class="skills-container">
+                <span class="skill-badge" data-skill="powerbi">PowerBI</span>
+                <span class="skill-badge" data-skill="tensorflow">TensorFlow</span>
+                <span class="skill-badge" data-skill="pytorch">PyTorch</span>
+                <span class="skill-badge" data-skill="scikit-learn">Scikit-learn</span>
+                <span class="skill-badge" data-skill="pandas">Pandas</span>
+                <span class="skill-badge" data-skill="numpy">NumPy</span>
+                <span class="skill-badge" data-skill="matplotlib">Matplotlib</span>
+                <span class="skill-badge" data-skill="seaborn">Seaborn</span>
+                <span class="skill-badge" data-skill="opencv">OpenCV</span>
+                <span class="skill-badge" data-skill="nltk">NLTK</span>
+                <span class="skill-badge" data-skill="streamlit">Streamlit</span>
+                <span class="skill-badge" data-skill="django">Django</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h5 mb-3 text-primary"><i class="fa-solid fa-gears me-2 text-muted"></i>Technical Skills</h3>
+              <div class="skills-container mb-4">
+                <span class="skill-badge" data-skill="ml-algorithms">ML Algorithms</span>
+                <span class="skill-badge" data-skill="nlp">NLP</span>
+                <span class="skill-badge" data-skill="data-preprocessing">Data Preprocessing</span>
+                <span class="skill-badge" data-skill="feature-engineering">Feature Engineering</span>
+                <span class="skill-badge" data-skill="statistical-analysis">Statistical Analysis</span>
+                <span class="skill-badge" data-skill="scripting-and-automation">Scripting and Automation</span>
+                <span class="skill-badge" data-skill="web-scraping">Web Scraping</span>
+              </div>
+
+              <h3 class="h5 mb-3 text-primary"><i class="fa-solid fa-users-line me-2 text-muted"></i>Soft Skills</h3>
+              <div class="skills-container">
+                <span class="skill-badge" data-skill="leadership">Leadership</span>
+                <span class="skill-badge" data-skill="teamwork">Teamwork</span>
+                <span class="skill-badge" data-skill="writing">Writing</span>
+                <span class="skill-badge" data-skill="communication">Communication</span>
+                <span class="skill-badge" data-skill="time-management">Time Management</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interactive Case Studies (Problem, Task, Process, Outcome) -->
+        <section class="glass-card" id="projects">
+          <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i>Featured Projects Showcase</h2>
+          
+          <div class="project-showcase">
+            <!-- Left Side Project Selector -->
+            <div class="project-menu">
+              <button class="project-menu-item active" data-project-id="erp_platform">
+                <h4>Data Analytics &amp; ERP</h4>
+                <span>Python / Cleansing / Reports</span>
+              </button>
+              <button class="project-menu-item" data-project-id="forensic">
+                <h4>Bank Forensics System</h4>
+                <span>AI Models / Transformers / NLP</span>
+              </button>
+              <button class="project-menu-item" data-project-id="theft">
+                <h4>Material Theft &amp; CV</h4>
+                <span>PyTorch / OpenCV / ML</span>
+              </button>
+              <button class="project-menu-item" data-project-id="tracker">
+                <h4>Open-Source BI &amp; Tracker</h4>
+                <span>Python / Pandas / Dashboards</span>
+              </button>
+            </div>
+
+            <!-- Right Side Detailed Display Area -->
+            <div class="project-display" id="active-project-display">
+              <!-- Dynamic Case Study Content (Loaded via JS) -->
+            </div>
+          </div>
+
+          <!-- Hidden container holding raw data for print layout (ensures all projects print in text list) -->
+          <div class="d-none d-print-block">
+            <!-- Project 1 -->
+            <div class="ptpo-print-wrapper border-bottom pb-3 mb-3">
+              <h4 class="text-primary font-weight-bold">1. Data Analytics &amp; ERP Platform</h4>
+              <div class="ptpo-card ptpo-problem">
+                <h5>Problem</h5>
+                <p>Auditing massive ERP and accounting records manually was highly inefficient and error-prone, causing delays in compliance reporting, duplicate tax entries, and undetected discrepancies.</p>
+              </div>
+              <div class="ptpo-card ptpo-task">
+                <h5>Task</h5>
+                <p>Built a comprehensive data analytics platform capable of ingesting accounting and ERP datasets, performing automated data cleansing, validation, discrepancy detection, duplicate identification, and generating analytical reports across purchase, sales, taxation, and compliance-related datasets.</p>
+              </div>
+              <div class="ptpo-card ptpo-process">
+                <h5>Process</h5>
+                <p>Developed domain-specific analytical engines implementing multiple audit and verification checks commonly used in financial review and compliance processes, enabling faster identification of anomalies and data quality issues.</p>
+              </div>
+              <div class="ptpo-card ptpo-outcome">
+                <h5>Outcome</h5>
+                <p>Reduced tax-filing verification cycles and transaction duplication overheads, providing compliance teams with instant reports.</p>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="ptpo-print-wrapper border-bottom pb-3 mb-3">
+              <h4 class="text-primary font-weight-bold">2. Bank Statement Forensic Analysis System</h4>
+              <div class="ptpo-card ptpo-problem">
+                <h5>Problem</h5>
+                <p>Forensic investigations of bank statements were heavily slowed down by varied layout formats, requiring manual data transcription, transaction tagging, and audit trail tracing.</p>
+              </div>
+              <div class="ptpo-card ptpo-task">
+                <h5>Task</h5>
+                <p>Engineered a bank statement forensic analysis system leveraging Transformer-based AI models to automate statement extraction, transaction classification, data standardization, anomaly detection, and forensic trail generation for investigative and audit purposes.</p>
+              </div>
+              <div class="ptpo-card ptpo-process">
+                <h5>Process</h5>
+                <p>Designed spatial-layout-aware deep learning pipelines to extract records from scanned sheets. Automated the categorization of statements into structured standard ledgers, tracing transactional paths.</p>
+              </div>
+              <div class="ptpo-card ptpo-outcome">
+                <h5>Outcome</h5>
+                <p>Substantially reduced manual review timelines for investigative audits and generated standardized forensic ledger summaries.</p>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="ptpo-print-wrapper border-bottom pb-3 mb-3">
+              <h4 class="text-primary font-weight-bold">3. Material Theft &amp; CV Detection System</h4>
+              <div class="ptpo-card ptpo-problem">
+                <h5>Problem</h5>
+                <p>Severe logistical supply leakage (theft) during material transit led to high claims and inventory deficits.</p>
+              </div>
+              <div class="ptpo-card ptpo-task">
+                <h5>Task</h5>
+                <p>Build an AI-based weight and optical sensor system to monitor material volume discrepancies and flag early-warning theft indicators.</p>
+              </div>
+              <div class="ptpo-card ptpo-process">
+                <h5>Process</h5>
+                <p>Developed custom computer-vision algorithms using PyTorch and OpenCV. Preprocessed historical procurement logs and sensor scales, applying statistical anomaly thresholds and gradient boosting regression models.</p>
+              </div>
+              <div class="ptpo-card ptpo-outcome">
+                <h5>Outcome</h5>
+                <p>Reduced material loss by 50% for client companies, and reduced false-positive flags on security cameras by 20%.</p>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="ptpo-print-wrapper">
+              <h4 class="text-primary font-weight-bold">4. Open-Source BI &amp; Time Tracker App</h4>
+              <div class="ptpo-card ptpo-problem">
+                <h5>Problem</h5>
+                <p>Rising software cost overheads from PowerBI licenses along with the lack of detailed real-time visibility into internal software utilization metrics.</p>
+              </div>
+              <div class="ptpo-card ptpo-task">
+                <h5>Task</h5>
+                <p>Migrate organizational analytical reporting to open-source software, and build an automated activity logging and utilization tracker.</p>
+              </div>
+              <div class="ptpo-card ptpo-process">
+                <h5>Process</h5>
+                <p>Developed a background utility in Python utilizing API hooks to log system application usage metadata. Migrated corporate reporting queries to light Apache/Python dashboards, storing metrics securely in Postgres.</p>
+              </div>
+              <div class="ptpo-card ptpo-outcome">
+                <h5>Outcome</h5>
+                <p>Replaced proprietary BI tools entirely, decreasing software overheads while generating automated, real-time activity dashboards daily.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Experience Card -->
+        <section class="glass-card" id="experience">
+          <h2 class="section-title"><i class="fa-solid fa-briefcase"></i>Work Experience</h2>
+          
+          <div class="timeline">
+            
+            <!-- R S Patel & CA -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <div>
+                  <span class="job-title">AI / ML Developer</span> — 
+                  <span class="job-company">R S Patel &amp; CA</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="text-muted small"><i class="fa-solid fa-location-dot me-1"></i>Ahmedabad</span>
+                  <span class="job-date">Aug 2025 - Present</span>
+                </div>
+              </div>
+              <ul class="job-details">
+                <li>Built a data analytics platform that ingests accounting and ERP datasets, automatically cleanses and validates data, detects discrepancies and duplicates, and generates analytical reports for purchase, sales, tax, and compliance, allowing the finance team to review data faster.</li>
+                <li>Developed domain-specific analytical engines implementing multiple audit and verification checks commonly used in financial review and compliance processes, enabling faster identification of anomalies and data quality issues.</li>
+                <li>Created <span class="skill-mention" data-skill-ref="ml-algorithms">machine-learning models</span> that predict commodity prices and rates from historical procurement and transaction data, supporting forecasting and helping the procurement team make more informed buying decisions.</li>
+                <li>Engineered a bank-statement forensic analysis system that uses <span class="skill-mention" data-skill-ref="nlp">Transformer models</span> to extract statements, classify transactions, standardize data, detect anomalies, and generate forensic trails, cutting manual review time and improving audit accuracy.</li>
+                <li>Developed a tender intelligence platform with <span class="skill-mention" data-skill-ref="django">Django</span> that automatically analyzes tender documents, extracts requirements, identifies risks, assesses compliance, summarizes key points, and produces decision-support reports, streamlining the tender evaluation process.</li>
+                <li>Built and deployed cloud-hosted AI assistants that analyze large government financial datasets, generate insights, answer user queries, and produce analytical summaries, enabling finance teams to quickly identify budget trends and make informed decisions.</li>
+                <li>Designed and implemented internal workflow management applications with document tracking, article management, process automation, and operational reporting features, using <span class="skill-mention" data-skill-ref="django">Django</span> and <span class="skill-mention" data-skill-ref="streamlit">Streamlit</span>, which reduced manual handling time and improved reporting accuracy.</li>
+                <li>Architected scalable data pipelines for extraction, transformation, validation, reporting, and AI-driven analysis with <span class="skill-mention" data-skill-ref="python">Python</span>, <span class="skill-mention" data-skill-ref="django">Django</span>, and cloud services, resulting in faster data processing and more reliable analytics for business users.</li>
+              </ul>
+            </div>
+
+            <!-- IMS Decimal -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <div>
+                  <span class="job-title">Senior Data Analyst</span> — 
+                  <span class="job-company">IMS Decimal</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="text-muted small"><i class="fa-solid fa-location-dot me-1"></i>Ahmedabad</span>
+                  <span class="job-date">Apr 2024 - Aug 2025</span>
+                </div>
+              </div>
+              <ul class="job-details">
+                <li>Automated data scraping processes using <span class="skill-mention" data-skill-ref="python">Python</span> and <span class="skill-mention" data-skill-ref="pandas">Pandas</span>, assisting the Recruiting and Payment teams in streamlining their workflows.</li>
+                <li>Implemented open-source BI tools to replace <span class="skill-mention" data-skill-ref="powerbi">PowerBI</span>, enhancing analytical capabilities and reducing software costs for the company.</li>
+                <li>Developed an organization-wide Time Tracker application in <span class="skill-mention" data-skill-ref="python">Python</span> that automatically logged employee work hours, breaks, and app usage; integrated the data with <span class="skill-mention" data-skill-ref="powerbi">PowerBI</span> for daily updates and real-time reporting, providing detailed productivity analysis.</li>
+                <li>Developed an interactive sales dashboard with real-time updates using HubSpot data, improving decision-making efficiency for all IMS Group subsidiaries.</li>
+                <li>Developed an internal LLM platform using LLaMA and OpenAI APIs, storing indexed files in a PostgreSQL audit-ready database; the system improved file-retrieval accuracy and reduced search time for staff.</li>
+                <li>Developed and integrated a Social Media Dashboard consolidating LinkedIn, YouTube, Instagram, and website data, which provided the marketing team with real-time insights across all 5 brands owned by IMS Group, leading to improved performance tracking and more informed strategic decision-making.</li>
+              </ul>
+            </div>
+
+            <!-- Adani AI Labs -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <div>
+                  <span class="job-title">Executive Trainee: Data Scientist AI/ML</span> — 
+                  <span class="job-company">Adani AI Labs (Sibia Analytics)</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="text-muted small"><i class="fa-solid fa-location-dot me-1"></i>Ahmedabad</span>
+                  <span class="job-date">Feb 2023 - Jan 2024</span>
+                </div>
+              </div>
+              <ul class="job-details">
+                <li>Developed a Material theft detection system for a client, reducing material loss by <span class="fw-semibold">50%</span> through <span class="skill-mention" data-skill-ref="statistical-analysis">Statistical Analysis</span>, <span class="skill-mention" data-skill-ref="feature-engineering">Feature Engineering</span>, and <span class="skill-mention" data-skill-ref="ml-algorithms">Machine Learning</span>.</li>
+                <li>Forecasted inventory levels using advanced <span class="skill-mention" data-skill-ref="statistical-analysis">statistical models</span> and time series analysis, improving operational efficiency by <span class="fw-semibold">20%</span> and enhancing supply chain management.</li>
+                <li>Automated LinkedIn profile scraping and job-description analysis with a <span class="skill-mention" data-skill-ref="python">Python</span> script leveraging BeautifulSoup and spaCy <span class="skill-mention" data-skill-ref="nlp">NLP</span>, streamlining the recruitment process and improving matching accuracy.</li>
+                <li>Built a duplicate and fraud detection algorithm using computer-vision techniques in <span class="skill-mention" data-skill-ref="pytorch">PyTorch</span> and <span class="skill-mention" data-skill-ref="opencv">OpenCV</span>, improving claim-validation accuracy and lowering false-positive rates by <span class="fw-semibold">20%</span>.</li>
+                <li>Developed a cement-price prediction model with gradient-boosting regression on market data, delivering forecasts up to three days ahead to help stakeholders make informed pricing decisions.</li>
+                <li>Created and trained an OCR model for passport recognition, achieving higher accuracy than previous models, resulting in improved efficiency and accuracy in passport data extraction.</li>
+                <li>Developed a data processing and analytics module using <span class="skill-mention" data-skill-ref="python">Python</span> and <span class="skill-mention" data-skill-ref="matplotlib">Matplotlib</span>, which enhanced decision-making by integrating and analyzing data efficiently, reducing processing time by <span class="fw-semibold">30%</span>.</li>
+              </ul>
+            </div>
+
+            <!-- Appsynergies -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <div>
+                  <span class="job-title">Business Analyst</span> — 
+                  <span class="job-company">Appsynergies</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="job-date">Previous Role</span>
+                </div>
+              </div>
+              <ul class="job-details">
+                <li>Implemented a comprehensive user feedback dashboard using <span class="skill-mention" data-skill-ref="matplotlib">Matplotlib</span> and <span class="skill-mention" data-skill-ref="pandas">Pandas</span>, resulting in a notable reduction in customer complaints and a significant improvement in user satisfaction.</li>
+              </ul>
+            </div>
+
+            <!-- Megatrend Fabcon -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <div>
+                  <span class="job-title">MIS Designer &amp; ERP Developer</span> — 
+                  <span class="job-company">Megatrend Fabcon PVT. LTD.</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                  <span class="job-date">Previous Role</span>
+                </div>
+              </div>
+              <ul class="job-details">
+                <li>Standardized data processing methodologies to streamline product fabrication workflow, enhancing manufacturing efficiency.</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Education & Certifications Grid -->
+        <div class="row g-4 mb-4">
+          
+          <!-- Education Column -->
+          <div class="col-md-6 d-flex">
+            <section class="glass-card w-100 mb-0" id="education">
+              <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+              
+              <div class="mb-4">
+                <h3 class="h5 mb-1 text-primary">PGDM, Big Data Analytics</h3>
+                <div class="text-secondary fw-semibold mb-1">Adani Institute of Digital Technology Limited</div>
+                <div class="text-muted small">Jul 2021 - May 2023</div>
+              </div>
+
+              <div>
+                <h3 class="h5 mb-1 text-primary">Bachelor of Science, Statistics</h3>
+                <div class="text-secondary fw-semibold mb-1">Gujarat University</div>
+                <div class="text-muted small">Jul 2018 - May 2021</div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="col-md-6 d-flex">
+            <section class="glass-card w-100 mb-0" id="certifications">
+              <h2 class="section-title"><i class="fa-solid fa-certificate"></i>Certifications</h2>
+              
+              <ul class="job-details">
+                <li class="mb-3">
+                  <span class="fw-semibold text-primary">Applied Data Science Lab</span><br>
+                  <span class="text-secondary">WorldQuant University</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fw-semibold text-primary">Python and Statistics for Financial Analysis</span><br>
+                  <span class="text-secondary">Coursera / Online</span>
+                </li>
+                <li>
+                  <span class="fw-semibold text-primary">Applied AI Lab: Deep Learning for Computer Vision</span><br>
+                  <span class="text-secondary">Developing expertise in CNNs, object detection, and model deployment</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section class="glass-card" id="contact">
+          <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i>Contact Us</h2>
+          
+          <div class="contact-form-container">
+            <!-- Left Info Panel -->
+            <div class="d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h4 mb-3 text-primary">Let's build something together</h3>
+                <p class="text-secondary mb-4">
+                  Whether you have an upcoming Machine Learning engineering task, data analysis project, or need automation pipelines structured with Python and Django, get in touch to discuss details.
+                </p>
+              </div>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-btn"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <div class="text-muted small">Email Address</div>
+                    <a href="mailto:harshkumardegamadiya@gmail.com" class="fw-semibold">harshkumardegamadiya@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-btn"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <div class="text-muted small">Phone Number</div>
+                    <a href="tel:+918238136766" class="fw-semibold">+91-823-813-6766</a>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-btn"><i class="fa-solid fa-location-crosshairs"></i></div>
+                  <div>
+                    <div class="text-muted small">Current Location</div>
+                    <span class="fw-semibold text-secondary">Ahmedabad, Gujarat, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div>
+              <form id="portfolio-contact-form" action="https://formspree.io/f/mkoelbrq" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group-glass">
+                      <label class="form-label-glass" for="form-name">Your Name</label>
+                      <input type="text" id="form-name" name="name" class="form-control-glass" placeholder="John Doe" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group-glass">
+                      <label class="form-label-glass" for="form-email">Email Address</label>
+                      <input type="email" id="form-email" name="email" class="form-control-glass" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group-glass">
+                  <label class="form-label-glass" for="form-subject">Subject</label>
+                  <input type="text" id="form-subject" name="subject" class="form-control-glass" placeholder="Project Inquiry" required>
+                </div>
+
+                <div class="form-group-glass">
+                  <label class="form-label-glass" for="form-message">Message Details</label>
+                  <textarea id="form-message" name="message" class="form-control-glass" placeholder="Hi Harshkumar, I would love to talk about..." required></textarea>
+                </div>
+
+                <button type="submit" id="form-submit-btn" class="btn-gradient w-100">
+                  <span class="btn-text">Send Message</span>
+                  <span class="spinner-border spinner-border-sm text-light ms-2" role="status" aria-hidden="true"></span>
+                </button>
+
+                <!-- Feedback Toast -->
+                <div class="form-feedback" id="contact-feedback">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Message sent successfully! I will get back to you shortly.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-muted pb-5 pt-3" style="font-size: 0.85rem; position: relative; z-index: 1;">
+    <p class="mb-1">&copy; 2026 Harshkumar Degamadiya. All rights reserved.</p>
+    <p>Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></p>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Interactive Logic Script -->
+  <script>
+    // --- 1. Theme Management ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+
+    // Load initial theme
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    htmlEl.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlEl.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      const icon = themeToggleBtn.querySelector('i');
+      if (theme === 'dark') {
+        icon.className = 'fa-solid fa-sun';
+      } else {
+        icon.className = 'fa-solid fa-moon';
+      }
+    }
+
+    // --- 2. Interactive Data-Science Canvas Background ---
+    const canvas = document.getElementById('network-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let mouse = { x: null, y: null, radius: 150 };
+
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    window.addEventListener('mouseout', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initParticles();
+    }
+
+    class Particle {
+      constructor(x, y, directionX, directionY, size, color) {
+        this.x = x;
+        this.y = y;
+        this.directionX = directionX;
+        this.directionY = directionY;
+        this.size = size;
+        this.color = color;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+
+      update() {
+        if (this.x > canvas.width || this.x < 0) {
+          this.directionX = -this.directionX;
+        }
+        if (this.y > canvas.height || this.y < 0) {
+          this.directionY = -this.directionY;
+        }
+
+        if (mouse.x && mouse.y) {
+          let dx = mouse.x - this.x;
+          let dy = mouse.y - this.y;
+          let distance = Math.sqrt(dx * dx + dy * dy);
+          if (distance < mouse.radius) {
+            this.x += dx * 0.02;
+            this.y += dy * 0.02;
+          }
+        }
+
+        this.x += this.directionX;
+        this.y += this.directionY;
+
+        this.draw();
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      const density = (canvas.width * canvas.height) / 12000;
+      const particleColor = getComputedStyle(document.documentElement).getPropertyValue('--canvas-particle').trim();
+
+      for (let i = 0; i < density; i++) {
+        let size = Math.random() * 2 + 1;
+        let x = Math.random() * (canvas.width - size * 2) + size;
+        let y = Math.random() * (canvas.height - size * 2) + size;
+        let directionX = (Math.random() * 0.4) - 0.2;
+        let directionY = (Math.random() * 0.4) - 0.2;
+        particles.push(new Particle(x, y, directionX, directionY, size, particleColor));
+      }
+    }
+
+    function connect() {
+      const maxDistance = 110;
+      const lineColor = getComputedStyle(document.documentElement).getPropertyValue('--canvas-line').trim();
+
+      for (let a = 0; a < particles.length; a++) {
+        for (let b = a; b < particles.length; b++) {
+          let dx = particles[a].x - particles[b].x;
+          let dy = particles[a].y - particles[b].y;
+          let distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < maxDistance) {
+            let opacity = 1 - (distance / maxDistance);
+            ctx.strokeStyle = lineColor.replace(/[\d\.]+\)$/g, `${opacity * 0.2})`);
+            ctx.lineWidth = 0.8;
+            ctx.beginPath();
+            ctx.moveTo(particles[a].x, particles[a].y);
+            ctx.lineTo(particles[b].x, particles[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+      }
+      connect();
+      requestAnimationFrame(animate);
+    }
+
+    const observer = new MutationObserver(() => {
+      initParticles();
+    });
+    observer.observe(htmlEl, { attributes: true, attributeFilter: ['data-theme'] });
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    animate();
+
+
+    // --- 3. Interactive Case Study Showcase (Problem, Task, Process, Outcome) ---
+    const projectsData = {
+      erp_platform: {
+        title: "Data Analytics & ERP Platform",
+        subtitle: "R S Patel & CA (Aug 2025 - Present)",
+        problem: "Auditing massive ERP and accounting records manually was highly inefficient and error-prone, causing delays in compliance reporting, duplicate tax entries, and undetected discrepancies.",
+        task: "Built a comprehensive data analytics platform capable of ingesting accounting and ERP datasets, performing automated data cleansing, validation, discrepancy detection, duplicate identification, and generating analytical reports across purchase, sales, taxation, and compliance-related datasets.",
+        process: "Developed domain-specific analytical engines implementing multiple audit and verification checks commonly used in financial review and compliance processes, enabling faster identification of anomalies and data quality issues.",
+        outcome: [
+          "Reduced tax-filing verification cycles and transaction duplication overheads",
+          "Automated ledger anomaly matching and compliance report pipelines",
+          "Ensured tax and regulatory compliance files standard audit validations"
+        ]
+      },
+      forensic: {
+        title: "Bank Statement Forensic Analysis System",
+        subtitle: "R S Patel & CA (Aug 2025 - Present)",
+        problem: "Forensic investigations of bank statements were heavily slowed down by varied layout formats, requiring manual data transcription, transaction tagging, and audit trail tracing.",
+        task: "Engineered a bank statement forensic analysis system leveraging Transformer-based AI models to automate statement extraction, transaction classification, data standardization, anomaly detection, and forensic trail generation for investigative and audit purposes.",
+        process: "Designed spatial-layout-aware deep learning pipelines to extract records from scanned sheets. Automated the categorization of statements into structured standard ledgers, tracing transactional paths.",
+        outcome: [
+          "Substantially reduced manual review timelines for investigative audits",
+          "Generated standardized forensic ledger summaries and transfer loop traces",
+          "Standardized multi-bank formats into a secure, unified Postgres database"
+        ]
+      },
+      theft: {
+        title: "Material Theft & Computer-Vision Detection",
+        subtitle: "Adani AI Labs (Feb 2023 - Jan 2024)",
+        problem: "Corporate clients experienced significant material deficits and shrinkage during shipping transit. Traditional weight indicators failed to prevent cargo tampering or fraud schemes.",
+        task: "Design and train automated CV and statistical systems to analyze transit scaling curves, flag discrepancy weight loads, and identify physical theft alerts.",
+        process: "Engineered regression and time series forecasting modules in Python using OpenCV and PyTorch. Extracted critical weight traits and automated cargo claims checks using gradient-boosted networks.",
+        outcome: [
+          "Reduced material loss by 50% through predictive tracking alerts",
+          "Cut claim verification validation logs and manual checkups by 20%",
+          "Reduced false-positive alerts on automated camera setups"
+        ]
+      },
+      tracker: {
+        title: "Open-Source BI & Time Tracker Application",
+        subtitle: "IMS Decimal (Apr 2024 - Aug 2025)",
+        problem: "Excessive corporate subscription licensing costs from PowerBI tools. Additionally, payment operations lacked visibility into staff working cycles and application usage bottlenecks.",
+        task: "Migrate client analytics and reports to free open-source utilities and develop a platform to record employee active app usage daily.",
+        process: "Created a lightweight desktop logging script in Python to gather background app metadata. Configured data ingestion pipelines using SQL, feeding details directly into interactive dashboards.",
+        outcome: [
+          "Successfully avoided expensive BI renewal costs across five sub-brands",
+          "Streamlined payroll and invoicing cycles via integrated HubSpot syncs",
+          "Delivered detailed, daily-updated productivity and workload analytics"
+        ]
+      }
+    };
+
+    const projectMenuItems = document.querySelectorAll('.project-menu-item');
+    const projectDisplay = document.getElementById('active-project-display');
+
+    function renderActiveProject(projectId) {
+      const data = projectsData[projectId];
+      if (!data) return;
+
+      // Add fade animation class
+      projectDisplay.classList.remove('fade-transition');
+      void projectDisplay.offsetWidth; // Trigger reflow to restart animation
+
+      const outcomeListHtml = data.outcome.map(item => `<li>${item}</li>`).join('');
+
+      projectDisplay.innerHTML = `
+        <div class="mb-4">
+          <h3 class="h4 text-primary mb-1">${data.title}</h3>
+          <span class="text-muted fw-semibold small">${data.subtitle}</span>
+        </div>
+        
+        <div class="ptpo-container">
+          <div class="ptpo-card ptpo-problem">
+            <h5><i class="fa-solid fa-triangle-exclamation me-2"></i>Problem</h5>
+            <p>${data.problem}</p>
+          </div>
+          
+          <div class="ptpo-card ptpo-task">
+            <h5><i class="fa-solid fa-bullseye me-2"></i>Task</h5>
+            <p>${data.task}</p>
+          </div>
+          
+          <div class="ptpo-card ptpo-process">
+            <h5><i class="fa-solid fa-gears me-2"></i>Process</h5>
+            <p>${data.process}</p>
+          </div>
+          
+          <div class="ptpo-card ptpo-outcome">
+            <h5><i class="fa-solid fa-circle-check me-2"></i>Outcome</h5>
+            <ul>${outcomeListHtml}</ul>
+          </div>
+        </div>
+      `;
+
+      projectDisplay.classList.add('fade-transition');
+    }
+
+    // Set default project on load
+    renderActiveProject('erp_platform');
+
+    projectMenuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Toggle active menu class
+        projectMenuItems.forEach(btn => btn.classList.remove('active'));
+        item.classList.add('active');
+
+        // Render project case details
+        const projectId = item.getAttribute('data-project-id');
+        renderActiveProject(projectId);
+      });
+    });
+
+
+    // --- 4. Interactive Skills & Experience Cross-Highlighting ---
+    const skillBadges = document.querySelectorAll('.skill-badge');
+    const skillMentions = document.querySelectorAll('.skill-mention');
+
+    skillBadges.forEach(badge => {
+      const skillName = badge.getAttribute('data-skill');
+      
+      badge.addEventListener('mouseenter', () => {
+        let hasMatches = false;
+        skillMentions.forEach(mention => {
+          if (mention.getAttribute('data-skill-ref') === skillName) {
+            mention.classList.add('highlight-active');
+            hasMatches = true;
+          }
+        });
+
+        if (hasMatches) {
+          document.querySelectorAll('.timeline-item').forEach(item => {
+            const mentionsInItem = item.querySelectorAll(`.skill-mention[data-skill-ref="${skillName}"]`);
+            if (mentionsInItem.length === 0) {
+              item.style.opacity = '0.4';
+              item.style.filter = 'blur(0.5px)';
+            }
+          });
+        }
+      });
+
+      badge.addEventListener('mouseleave', () => {
+        skillMentions.forEach(mention => {
+          mention.classList.remove('highlight-active');
+        });
+        document.querySelectorAll('.timeline-item').forEach(item => {
+          item.style.opacity = '';
+          item.style.filter = '';
+        });
+      });
+    });
+
+    skillMentions.forEach(mention => {
+      const skillRef = mention.getAttribute('data-skill-ref');
+
+      mention.addEventListener('mouseenter', () => {
+        skillBadges.forEach(badge => {
+          if (badge.getAttribute('data-skill') === skillRef) {
+            badge.classList.add('highlighted');
+            badge.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        });
+      });
+
+      mention.addEventListener('mouseleave', () => {
+        skillBadges.forEach(badge => {
+          badge.classList.remove('highlighted');
+        });
+      });
+    });
+
+
+    // --- 5. Live Search Filter ---
+    const searchInput = document.getElementById('resume-search');
+    
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const allCards = document.querySelectorAll('.glass-card, .timeline-item');
+      
+      if (query === "") {
+        allCards.forEach(card => {
+          card.classList.remove('dimmed', 'matched');
+          removeHighlights(card);
+        });
+        return;
+      }
+
+      allCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        
+        if (card.id === 'profile' || card.id === 'summary' || card.id === 'skills') {
+          highlightText(card, query);
+          return;
+        }
+
+        if (text.includes(query)) {
+          card.classList.remove('dimmed');
+          card.classList.add('matched');
+          highlightText(card, query);
+        } else {
+          card.classList.add('dimmed');
+          card.classList.remove('matched');
+          removeHighlights(card);
+        }
+      });
+    });
+
+    function highlightText(element, query) {
+      removeHighlights(element);
+      const walk = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+      const textNodes = [];
+      let node;
+      while (node = walk.nextNode()) {
+        if (node.parentNode.nodeName !== 'SCRIPT' && node.parentNode.nodeName !== 'STYLE' && !node.parentNode.classList.contains('highlight-mark')) {
+          textNodes.push(node);
+        }
+      }
+
+      textNodes.forEach(node => {
+        const text = node.nodeValue;
+        const index = text.toLowerCase().indexOf(query);
+        if (index >= 0) {
+          const parent = node.parentNode;
+          const frag = document.createDocumentFragment();
+          let lastIndex = 0;
+          let i = text.toLowerCase().indexOf(query);
+          while (i !== -1) {
+            frag.appendChild(document.createTextNode(text.substring(lastIndex, i)));
+            const mark = document.createElement('mark');
+            mark.className = 'highlight-mark';
+            mark.appendChild(document.createTextNode(text.substring(i, i + query.length)));
+            frag.appendChild(mark);
+            lastIndex = i + query.length;
+            i = text.toLowerCase().indexOf(query, lastIndex);
+          }
+          frag.appendChild(document.createTextNode(text.substring(lastIndex)));
+          parent.replaceChild(frag, node);
+        }
+      });
+    }
+
+    function removeHighlights(element) {
+      const marks = element.querySelectorAll('.highlight-mark');
+      marks.forEach(mark => {
+        const parent = mark.parentNode;
+        parent.replaceChild(document.createTextNode(mark.textContent), mark);
+        parent.normalize();
+      });
+    }
+
+
+    // --- 6. Contact Form Submission Logic (Formspree AJAX Integration) ---
+    const contactForm = document.getElementById('portfolio-contact-form');
+    const submitBtn = document.getElementById('form-submit-btn');
+    const feedbackToast = document.getElementById('contact-feedback');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const btnText = submitBtn.querySelector('.btn-text');
+      const spinner = submitBtn.querySelector('.spinner-border');
+      
+      const name = document.getElementById('form-name').value;
+      const email = document.getElementById('form-email').value;
+      const subject = document.getElementById('form-subject').value;
+      const message = document.getElementById('form-message').value;
+
+      if (!name || !email || !subject || !message) return;
+
+      // Show loader state
+      submitBtn.disabled = true;
+      btnText.textContent = "Sending Message...";
+      spinner.style.display = "inline-block";
+      feedbackToast.style.display = "none";
+
+      // AJAX request to Formspree
+      fetch("https://formspree.io/f/mkoelbrq", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: message
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Server response was not ok');
+        }
+      })
+      .then(data => {
+        submitBtn.disabled = false;
+        btnText.textContent = "Send Message";
+        spinner.style.display = "none";
+        
+        // Display custom success toast
+        feedbackToast.style.display = "flex";
+        
+        // Reset form inputs
+        contactForm.reset();
+
+        // Hide feedback toast after 5 seconds
+        setTimeout(() => {
+          feedbackToast.style.display = "none";
+        }, 5000);
+      })
+      .catch(error => {
+        submitBtn.disabled = false;
+        btnText.textContent = "Send Message";
+        spinner.style.display = "none";
+        alert("Oops! There was a problem submitting your message. Please try again or email directly.");
+      });
+    });
+
+
+    // --- 7. Print Trigger ---
+    document.getElementById('print-btn').addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</body>
+</html>
